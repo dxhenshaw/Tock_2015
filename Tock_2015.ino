@@ -6,7 +6,8 @@
  * v4. Error and pause logic - 2/9/12
  * v5. Bug fix to force recalibrate on 1:00am rewind - 7/24/12
  ----
- * v6. Migrated to Visual Studio
+ * v6. Migrated to Visual Studio. Board = 'Arduino Duemilanove w/ ATmega328'
+		Added new logic to cope with leader tape sticking due to duct tape glue
  */
 
 #include <Wire.h>
@@ -170,15 +171,15 @@ void moveBackward(){ //go backward index # of times until current = target
        currentSection = prevCurrentSection; //Not sure where we are so use previous value
      }
      
-     Serial.print(currentIndexMinuteMarker);
-     Serial.println(currentSection);
+     //Serial.print(currentIndexMinuteMarker);
+     //Serial.println(currentSection);
      
     if (currentSection == 'B' && prevCurrentSection == 'W') //We were white, now we're black... we have seen the minute marker
    {
-     Serial.print("Bindex: ");
-     Serial.print(currentIndex-1);
-     Serial.print(" @ ");
-     Serial.println(y);
+     //Serial.print("Bindex: ");
+     //Serial.print(currentIndex-1);
+     //Serial.print(" @ ");
+     //Serial.println(y);
      errorStatus = false;
      break;
    }
@@ -284,10 +285,10 @@ void moveForward(){
      
     if (currentSection == 'B' && prevCurrentSection == 'W') //We were white, now we're black... we have seen the minute marker
    {
-     Serial.print("Findex: ");
-     Serial.print(currentIndex+1);
-     Serial.print(" @ ");
-     Serial.println(y);
+     //Serial.print("Findex: ");
+     //Serial.print(currentIndex+1);
+     //Serial.print(" @ ");
+     //Serial.println(y);
      
      errorStatus = false;
      break;
@@ -304,8 +305,23 @@ void moveForward(){
      digitalWrite(stepper1Step, LOW);    // reset step
      delay(stepperDelay);
    }
-      currentIndex++ ;
-      displayPosition();  
+   // Error-checking added 12/13/14. New power supply doesn't provide same power as previous one, and tape sometimes doesn't get past the "stickyness" of the duct tape markers
+   byte attemptsMade = 0;	// counter to ensure we don't try edging forward forever
+
+   //determine if we are in the upper (white), lower (black) or indeterminate range (use previous value)
+   do { // double-check that we are seeing black
+	   currentIndexMinuteMarker = analogRead(indexMinuteMarker);//get the value of the index minute marker at this exact time
+	   // if not, the leader tape may have bounced back
+	   // so try to advance forward until we see white:
+	   digitalWrite(stepper1Step, HIGH);   // make one step
+	   delay(stepperDelay);                // pause for effect
+	   digitalWrite(stepper1Step, LOW);    // reset step
+	   delay(stepperDelay);
+	   attemptsMade++;
+   } while ((attemptsMade < 100) && (currentIndexMinuteMarker >= upperPinRead));	// attempts to move forward < 100 OR in white zone
+   
+   currentIndex++ ;
+   displayPosition();  
      // prevIndexMinuteMarker = analogRead(indexMinuteMarker); //record value for comparison next time round
       //Serial.println(prevIndexMinuteMarker);
 
