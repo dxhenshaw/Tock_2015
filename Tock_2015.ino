@@ -6,7 +6,7 @@
  * v4. Error and pause logic - 2/9/12
  * v5. Bug fix to force recalibrate on 1:00am rewind - 7/24/12
  ----
- * v6. Migrated to Visual Studio. Board = 'Arduino Duemilanove w/ ATmega328'
+ * v6. Migrated to Visual Studio. Board = 'Arduino Duemilanove w/ ATmega328' - 12/13/14
 		Added new logic to cope with leader tape sticking due to duct tape glue
  */
 
@@ -113,14 +113,14 @@ void loop()
      errorStatus = false;
      addMinute();
      displayFullTime();
-     delay(400);
+     delay(150);
    }
    else if (digitalRead(subtractMinutePin) == LOW) 
    {
      errorStatus = false;
      subtractMinute();
      displayFullTime();
-     delay(400);     
+     delay(150);     
    }
    else if ((targetIndex > currentIndex) && (errorStatus == false) && (pauseStatus == false))
    {
@@ -259,7 +259,8 @@ void moveForward(){
 
  for (int i=currentIndex; i < targetIndex; i++)
  {
-   for (int y=0; y < maxPulses; y++)
+	 int y = 0;
+   for (y=0; y < maxPulses; y++)
    {
      prevCurrentSection = currentSection; //Store for next time round
      currentIndexMinuteMarker = analogRead(indexMinuteMarker);//get the value of the index minute marker at this exact time

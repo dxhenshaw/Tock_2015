@@ -1,52 +1,55 @@
 <VisualMicro>
   <Program Name="Tock_2015" Ext=".ino" Location="\\SERVER\Data\Arduino\Tock_2015">
     <Platform Name="arduino10x" Package="arduino" Platform="avr" Architecture="avr">
-      <Board Name="atmega328" Description="Arduino Duemilanove w/ ATmega328" CoreFolder="C:\Program Files\arduino-1.0.3\hardware\arduino\cores\arduino" VariantFullPath="C:\Program Files\arduino-1.0.3\hardware\arduino\variants\standard" McuIdePath="C:\Program Files\arduino-1.0.3" McuSketchBookPath="C:\Users\David\Documents\Arduino" name="Arduino Duemilanove w/ ATmega328" upload.protocol="arduino" upload.maximum_size="30720" upload.speed="57600" bootloader.low_fuses="0xFF" bootloader.high_fuses="0xDA" bootloader.extended_fuses="0x05" bootloader.path="atmega" bootloader.file="ATmegaBOOT_168_atmega328.hex" bootloader.unlock_bits="0x3F" bootloader.lock_bits="0x0F" build.mcu="atmega328p" build.f_cpu="16000000L" build.core="arduino" build.variant="standard" runtime.ide.path="C:\Program Files\arduino-1.0.3" build.system.path="C:\Program Files\arduino-1.0.3\hardware\arduino\system" runtime.ide.version="103" originalid="atmega328" vm.platform.root.path="C:\Program Files\Visual Micro\Visual Micro for Arduino\Micro Platforms\arduino10x" ide.hint="Arduino 0023 and 1.0.x Ide" ide.location.key="Arduino" ide.location.ide.winreg="Arduino 1.0.x Application" ide.location.sketchbook.winreg="Arduino 1.0.x Sketchbook" ide.location.sketchbook.preferences="sketchbook.path" ide.location.sketchbook.default="%MYDOCUMENTS%\arduino" ide.location.preferences="%VM_APPDATA_ROAMING%\arduino\preferences.txt" ide.default.package="arduino" ide.default.platform="avr" ide.multiplatform="true" ide.includes="arduino.h" ide.platformswithoutpackage="true" ide.includes.fallback="wprogram.h" ide.extension="ino" ide.extension.fallback="pde" ide.versionLTEQ="149" ide.exe="arduino.exe" ide.hosts="atmel" ide.url="http://arduino.cc/en/Main/Software" vm.debug="true" software="ARDUINO" ide.appid="arduino10x" location.sketchbook="C:\Users\David\Documents\Arduino" build.core.vmresolved="C:\Program Files\arduino-1.0.3\hardware\arduino\cores\arduino" build.core.parentfolder.vmresolved="C:\Program Files\arduino-1.0.3\hardware\arduino\cores" build.core.coresparentfolder.vmresolved="C:\Program Files\arduino-1.0.3\hardware\arduino" vm.core.include="arduino.h" build.board="AVR_ATMEGA328" vm.boardsource.path="C:\Program Files\arduino-1.0.3\hardware\arduino" runtime.platform.path="C:\Program Files\arduino-1.0.3\hardware\arduino" vm.platformname.name="avr" build.arch="AVR" build.variant.vmresolved="C:\Program Files\arduino-1.0.3\hardware\arduino\variants\standard" vm.runtime.compiler.showwarnings="false" serial.port.file="COM6" serial.port="COM6" compiler.path="C:\Program Files\arduino-1.0.3\hardware\tools\avr\bin\" includes=" -I&quot;C:\Program Files\arduino-1.0.3\hardware\arduino\cores\arduino&quot;  -I&quot;C:\Program Files\arduino-1.0.3\hardware\arduino\variants\standard&quot;  -I&quot;C:\Program Files\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers\VM_DBG&quot;  -I&quot;C:\Program Files\arduino-1.0.3\libraries\Wire&quot;  -I&quot;C:\Program Files\arduino-1.0.3\libraries\RealTimeClockDS1307&quot;  -I&quot;C:\Program Files\arduino-1.0.3\libraries\LiquidCrystal_I2C2004V1&quot;  -I&quot;C:\Program Files\arduino-1.0.3\libraries&quot;  -I&quot;C:\Program Files\arduino-1.0.3\hardware\arduino\libraries&quot;  -I&quot;C:\Program Files\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers&quot;  -I&quot;C:\Users\David\Documents\Arduino\libraries&quot;  -I&quot;C:\Program Files\arduino-1.0.3\libraries\Wire\utility&quot;" build.path="C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328" build.project_name="Tock_2015" build.variant.path="C:\Program Files\arduino-1.0.3\hardware\arduino\variants\standard" archive_file="core.a" object_file="C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\WString.cpp.o" source_file="C:\Program Files\arduino-1.0.3\hardware\arduino\cores\arduino\WString.cpp" object_files="&quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\Tock_2015.cpp.o&quot; &quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\VM_DBG\VM_mem_check.c.o&quot; &quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\VM_DBG\VM_DBG.cpp.o&quot; &quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\Wire\Wire.cpp.o&quot; &quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\Wire\utility\twi.c.o&quot; &quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\RealTimeClockDS1307\RealTimeClockDS1307.cpp.o&quot; &quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\LiquidCrystal_I2C2004V1\LiquidCrystal_I2C.cpp.o&quot; " build.architecture="avr" vmresolved.compiler.path="C:\Program Files\arduino-1.0.3\hardware\tools\avr\bin\" vmresolved.tools.path="C:\Program Files\arduino-1.0.3\hardware\tools\avr" />
+      <Board Name="atmega328" Description="Arduino Duemilanove w/ ATmega328" CoreFolder="C:\Program Files\arduino-1.0.3\hardware\arduino\cores\arduino" VariantFullPath="C:\Program Files\arduino-1.0.3\hardware\arduino\variants\standard" McuIdePath="C:\Program Files\arduino-1.0.3" McuSketchBookPath="C:\Users\David\Documents\Arduino" name="Arduino Duemilanove w/ ATmega328" upload.protocol="arduino" upload.maximum_size="30720" upload.speed="57600" bootloader.low_fuses="0xFF" bootloader.high_fuses="0xDA" bootloader.extended_fuses="0x05" bootloader.path="atmega" bootloader.file="ATmegaBOOT_168_atmega328.hex" bootloader.unlock_bits="0x3F" bootloader.lock_bits="0x0F" build.mcu="atmega328p" build.f_cpu="16000000L" build.core="arduino" build.variant="standard" runtime.ide.path="C:\Program Files\arduino-1.0.3" build.system.path="C:\Program Files\arduino-1.0.3\hardware\arduino\system" runtime.ide.version="103" originalid="atmega328" vm.platform.root.path="C:\Program Files\Visual Micro\Visual Micro for Arduino\Micro Platforms\arduino10x" ide.hint="Arduino 0023 and 1.0.x Ide" ide.location.key="Arduino" ide.location.ide.winreg="Arduino 1.0.x Application" ide.location.sketchbook.winreg="Arduino 1.0.x Sketchbook" ide.location.sketchbook.preferences="sketchbook.path" ide.location.sketchbook.default="%MYDOCUMENTS%\arduino" ide.location.preferences="%VM_APPDATA_ROAMING%\arduino\preferences.txt" ide.default.package="arduino" ide.default.platform="avr" ide.multiplatform="true" ide.includes="arduino.h" ide.platformswithoutpackage="true" ide.includes.fallback="wprogram.h" ide.extension="ino" ide.extension.fallback="pde" ide.versionLTEQ="149" ide.exe="arduino.exe" ide.hosts="atmel" ide.url="http://arduino.cc/en/Main/Software" vm.debug="true" software="ARDUINO" ide.appid="arduino10x" location.sketchbook="C:\Users\David\Documents\Arduino" build.core.vmresolved="C:\Program Files\arduino-1.0.3\hardware\arduino\cores\arduino" build.core.parentfolder.vmresolved="C:\Program Files\arduino-1.0.3\hardware\arduino\cores" build.core.coresparentfolder.vmresolved="C:\Program Files\arduino-1.0.3\hardware\arduino" vm.core.include="arduino.h" build.board="AVR_ATMEGA328" vm.boardsource.path="C:\Program Files\arduino-1.0.3\hardware\arduino" runtime.platform.path="C:\Program Files\arduino-1.0.3\hardware\arduino" vm.platformname.name="avr" build.arch="AVR" build.variant.vmresolved="C:\Program Files\arduino-1.0.3\hardware\arduino\variants\standard" vm.runtime.compiler.showwarnings="false" serial.port.file="COM6" serial.port="COM6" compiler.path="C:\Program Files\arduino-1.0.3\hardware\tools\avr\bin\" includes=" -I&quot;C:\Program Files\arduino-1.0.3\hardware\arduino\cores\arduino&quot;  -I&quot;C:\Program Files\arduino-1.0.3\hardware\arduino\variants\standard&quot;  -I&quot;C:\Program Files\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers\VM_DBG&quot;  -I&quot;C:\Program Files\arduino-1.0.3\libraries\Wire&quot;  -I&quot;C:\Program Files\arduino-1.0.3\libraries\RealTimeClockDS1307&quot;  -I&quot;C:\Program Files\arduino-1.0.3\libraries\LiquidCrystal_I2C2004V1&quot;  -I&quot;C:\Program Files\arduino-1.0.3\libraries&quot;  -I&quot;C:\Program Files\arduino-1.0.3\hardware\arduino\libraries&quot;  -I&quot;C:\Program Files\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers&quot;  -I&quot;C:\Users\David\Documents\Arduino\libraries&quot;  -I&quot;C:\Program Files\arduino-1.0.3\libraries\Wire\utility&quot;" build.path="C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328" build.project_name="Tock_2015" build.variant.path="C:\Program Files\arduino-1.0.3\hardware\arduino\variants\standard" archive_file="core.a" object_file="C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\LiquidCrystal_I2C2004V1\LiquidCrystal_I2C.cpp.o" source_file="C:\Program Files\arduino-1.0.3\libraries\LiquidCrystal_I2C2004V1\LiquidCrystal_I2C.cpp" object_files="&quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\Tock_2015.cpp.o&quot; &quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\Wire\Wire.cpp.o&quot; &quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\Wire\utility\twi.c.o&quot; &quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\RealTimeClockDS1307\RealTimeClockDS1307.cpp.o&quot; &quot;C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328\LiquidCrystal_I2C2004V1\LiquidCrystal_I2C.cpp.o&quot; " build.architecture="avr" vmresolved.compiler.path="C:\Program Files\arduino-1.0.3\hardware\tools\avr\bin\" vmresolved.tools.path="C:\Program Files\arduino-1.0.3\hardware\tools\avr" />
     </Platform>
-    <Compile CompilerErrors="0" ConfigurationName="Debug" StopOnError="False" OptimiseLibs="True" OptimiseCore="False" IsDebugStart="1" BuildPath="C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328" SketchName="Tock_2015" ReportDigitalPins="0" ReportAnalogPins="0" ReportI2C="0" ReportFreeMemory="0" IncludeDebug="1" LastDebugPreProcessorDefinitions="VM_DEBUG;VM_DEBUG_ENABLE 1;VM_DEBUG_BANDWIDTH_THROTTLE_MS 50;VM_DEBUGGER_TYPE_HARDWARESERIAL 0;VM_DEBUGGER_TYPE_SOFTWARESERIAL 1;VM_DEBUGGER_TYPE_FASTSERIAL 2;VM_DEBUGGER_TYPE_USB 3;VM_DEBUGGER_TYPE_TEENSY 4;VM_DEBUGGER_TYPE_UART 5;VM_DEBUGGER_TYPE_USART 6;VM_DEBUGGER_TYPE_USBSERIAL 7;VM_DEBUGGER_TYPE_TTYUART 8;VM_DEBUGGER_TYPE_NET_CONSOLE 9;VM_DEBUGGER_TYPE_Uart 10;VM_DEBUGGER_TYPE VM_DEBUGGER_TYPE_HARDWARESERIAL;" IncludesDebug="1" IsCompiled="1" />
+    <Compile CompilerErrors="0" ConfigurationName="Debug" StopOnError="False" OptimiseLibs="True" OptimiseCore="False" IsDebugStart="1" BuildPath="C:\Users\David\AppData\Local\VMicro\Arduino\Builds\Tock_2015\atmega328" SketchName="Tock_2015" ReportDigitalPins="0" ReportAnalogPins="0" ReportI2C="0" ReportFreeMemory="0" IncludeDebug="1" LastDebugPreProcessorDefinitions="VM_DEBUG;VM_DEBUG_ENABLE 1;VM_DEBUG_BANDWIDTH_THROTTLE_MS 100;VM_DEBUGGER_TYPE_HARDWARESERIAL 0;VM_DEBUGGER_TYPE_SOFTWARESERIAL 1;VM_DEBUGGER_TYPE_FASTSERIAL 2;VM_DEBUGGER_TYPE_USB 3;VM_DEBUGGER_TYPE_TEENSY 4;VM_DEBUGGER_TYPE_UART 5;VM_DEBUGGER_TYPE_USART 6;VM_DEBUGGER_TYPE_USBSERIAL 7;VM_DEBUGGER_TYPE_TTYUART 8;VM_DEBUGGER_TYPE_NET_CONSOLE 9;VM_DEBUGGER_TYPE_Uart 10;VM_DEBUGGER_TYPE VM_DEBUGGER_TYPE_HARDWARESERIAL;" IncludesDebug="1" IsCompiled="1" />
     <Debug EnableBreak="0" DebugEnabled="1" RemotePortSpeedWrittenToDebugSource="9600" />
     <VCCodeModel>
       <VCCodeMacros />
     </VCCodeModel>
     <BreakPoints>
-      <BreakPoint Index="1" Name="Tock_2015.ino, line 308" Id="1da36296-5f32-4050-943d-c8e261fbb30d" Enabled="1" Message="" MessageTextType="2" PreProcessedMessage="" Condition="" ConditionType="1" CurrentHits="0" File="\\server\data\arduino\tock_2015\tock_2015.ino" FileLine="308" FileColumn="1" FunctionName="moveForward()" FunctionLineOffset="57" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='1da36296-5f32-4050-943d-c8e261fbb30d'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
-        <Source>301	   
-302	     digitalWrite(stepper1Step, HIGH);   // make one step
-303	     delay(stepperDelay);                // pause for effect
-304	     digitalWrite(stepper1Step, LOW);    // reset step
-305	     delay(stepperDelay);
-306	   }
-307	   // Error-checking added 12/13/14. New power supply doesn't provide same power as previous one, and tape sometimes doesn't get past the "stickyness" of the duct tape markers
---&gt;308	   byte attemptsMade = 0;	// counter to ensure we don't try edging forward forever
-309	
-310	   //determine if we are in the upper (white), lower (black) or indeterminate range (use previous value)
-311	   do { // double-check that we are seeing black
-312		   currentIndexMinuteMarker = analogRead(indexMinuteMarker);//get the value of the index minute marker at this exact time
-313		   // if not, the leader tape may have bounced back
-314		   // so try to advance forward until we see white:
-315		   digitalWrite(stepper1Step, HIGH);   // make one step
-316		   delay(stepperDelay);                // pause for effect
-317		   digitalWrite(stepper1Step, LOW);    // reset step
+      <BreakPoint Index="1" Name="Tock_2015.ino, line 310" Id="1da36296-5f32-4050-943d-c8e261fbb30d" Enabled="1" Message="y={y}" MessageTextType="0" PreProcessedMessage="y={0}" Condition="" ConditionType="1" CurrentHits="0" File="\\server\data\arduino\tock_2015\tock_2015.ino" FileLine="310" FileColumn="1" FunctionName="moveForward()" FunctionLineOffset="57" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='1da36296-5f32-4050-943d-c8e261fbb30d'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>303	   
+304	     digitalWrite(stepper1Step, HIGH);   // make one step
+305	     delay(stepperDelay);                // pause for effect
+306	     digitalWrite(stepper1Step, LOW);    // reset step
+307	     delay(stepperDelay);
+308	   }
+309	   // Error-checking added 12/13/14. New power supply doesn't provide same power as previous one, and tape sometimes doesn't get past the "stickyness" of the duct tape markers
+--&gt;310	   byte attemptsMade = 0;	// counter to ensure we don't try edging forward forever
+311	
+312	   //determine if we are in the upper (white), lower (black) or indeterminate range (use previous value)
+313	   do { // double-check that we are seeing black
+314		   currentIndexMinuteMarker = analogRead(indexMinuteMarker);//get the value of the index minute marker at this exact time
+315		   // if not, the leader tape may have bounced back
+316		   // so try to advance forward until we see white:
+317		   digitalWrite(stepper1Step, HIGH);   // make one step
+318		   delay(stepperDelay);                // pause for effect
+319		   digitalWrite(stepper1Step, LOW);    // reset step
 </Source>
+        <MessageVariables>
+          <MessageVariable Name="y" Index="1" />
+        </MessageVariables>
       </BreakPoint>
-      <BreakPoint Index="2" Name="Tock_2015.ino, line 322" Id="325e3f59-b587-4f5a-9ccf-7d2dc86a3470" Enabled="1" Message="aM={attemptsMade}" MessageTextType="0" PreProcessedMessage="aM={0}" Condition="" ConditionType="1" CurrentHits="0" File="\\server\data\arduino\tock_2015\tock_2015.ino" FileLine="322" FileColumn="1" FunctionName="moveForward()" FunctionLineOffset="71" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='325e3f59-b587-4f5a-9ccf-7d2dc86a3470'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
-        <Source>315		   digitalWrite(stepper1Step, HIGH);   // make one step
-316		   delay(stepperDelay);                // pause for effect
-317		   digitalWrite(stepper1Step, LOW);    // reset step
-318		   delay(stepperDelay);
-319		   attemptsMade++;
-320	   } while ((attemptsMade &lt; 100) &amp;&amp; (currentIndexMinuteMarker &gt;= upperPinRead));	// attempts to move forward &lt; 100 OR in white zone
-321	   
---&gt;322	   currentIndex++ ;
-323	   displayPosition();  
-324	     // prevIndexMinuteMarker = analogRead(indexMinuteMarker); //record value for comparison next time round
-325	      //Serial.println(prevIndexMinuteMarker);
-326	
-327	 if (digitalRead(pausePin) == LOW)
-328	   {
-329	    break;
-330	   }      
-331	   
+      <BreakPoint Index="2" Name="Tock_2015.ino, line 324" Id="325e3f59-b587-4f5a-9ccf-7d2dc86a3470" Enabled="1" Message="aM={attemptsMade}" MessageTextType="0" PreProcessedMessage="aM={0}" Condition="" ConditionType="1" CurrentHits="0" File="\\server\data\arduino\tock_2015\tock_2015.ino" FileLine="324" FileColumn="1" FunctionName="moveForward()" FunctionLineOffset="71" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='325e3f59-b587-4f5a-9ccf-7d2dc86a3470'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>317		   digitalWrite(stepper1Step, HIGH);   // make one step
+318		   delay(stepperDelay);                // pause for effect
+319		   digitalWrite(stepper1Step, LOW);    // reset step
+320		   delay(stepperDelay);
+321		   attemptsMade++;
+322	   } while ((attemptsMade &lt; 100) &amp;&amp; (currentIndexMinuteMarker &gt;= upperPinRead));	// attempts to move forward &lt; 100 OR in white zone
+323	   
+--&gt;324	   currentIndex++ ;
+325	   displayPosition();  
+326	     // prevIndexMinuteMarker = analogRead(indexMinuteMarker); //record value for comparison next time round
+327	      //Serial.println(prevIndexMinuteMarker);
+328	
+329	 if (digitalRead(pausePin) == LOW)
+330	   {
+331	    break;
+332	   }      
+333	   
 </Source>
         <MessageVariables>
           <MessageVariable Name="attemptsMade" Index="1" />
